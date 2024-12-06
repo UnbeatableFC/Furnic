@@ -190,7 +190,6 @@
     z-index: 2;
     left: 150px;
     top: 50px;
-    overflow-x: hidden;
 }
 
 .second1 {
@@ -927,4 +926,68 @@
     }
 
     /* Seventh */
+    .six1 {
+       position: static;
+       gap: 10px;
+    }
+
+    .six1-box {
+        position: static;
+        display: flex;
+        width: 100%;
+        height: 20%;
+    }
+
+    .six1-img {
+        object-fit: contain;
+        height: 100px;
+    }
+
+    .chair-trend {
+        width: 100%;
+        height: 100%;
+    }
+
+    .chair-trend h4 {
+        font-size: 23px;
+    }
+    
+    .chair-trend h4::after {
+        content: "";
+        display: block;
+        height: 4px;
+        background-color: rgba(235, 150, 150, 0.466);
+        width: 25%;
+        margin-top: 10px;
+    }
+    
+    .chair-trend p {
+        font-size: 18px;
+        line-height: 2.2;
+        margin: 30px 30px 50px 20px;
+    }
+
+    .six2 {
+        position: static;
+        gap: 10px;
+        display: flex;
+        flex: 1;
+    }
+ 
+    .six2-box {
+        position: static;
+        width: 100%;
+        height: 100%;
+    }
+ 
+    .practical {
+        width: 100%;
+        height: 100%;
+    }
+
+    .six1-img {
+        height: 50%;
+    }
+
+
 }
