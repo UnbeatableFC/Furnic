@@ -4,6 +4,68 @@
     padding: 0;
 }
 
+/* FONTS */
+.lato-thin {
+    font-family: "Lato", serif;
+    font-weight: 100;
+    font-style: normal;
+}
+  
+.lato-light {
+    font-family: "Lato", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+  
+.lato-regular {
+    font-family: "Lato", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.lato-bold {
+    font-family: "Lato", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+  
+.lato-black {
+    font-family: "Lato", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+  
+.lato-thin-italic {
+    font-family: "Lato", serif;
+    font-weight: 100;
+    font-style: italic;
+}
+  
+.lato-light-italic {
+    font-family: "Lato", serif;
+    font-weight: 300;
+    font-style: italic;
+}
+  
+.lato-regular-italic {
+    font-family: "Lato", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+  
+.lato-bold-italic {
+    font-family: "Lato", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+  
+.lato-black-italic {
+    font-family: "Lato", serif;
+    font-weight: 900;
+    font-style: italic;
+}
+  
+
 /* Header */
 .header {
     display: flex;
@@ -122,13 +184,19 @@
 
 .second {
     position: absolute;
-    object-fit: fill;
+    /* object-fit: fill; */
     width: 550px;
     height: 450px;
     z-index: 2;
     left: 150px;
     top: 50px;
-    overflow-x: none;
+    overflow-x: hidden;
+}
+
+.second1 {
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
 }
 
 .simple-two {
@@ -153,7 +221,17 @@
     top: 70px;
     overflow-x: none;
     /* display: flex; */
+    color: white;
+}
 
+.haven h3 {
+    margin: 50px 20px 10px 50px;
+    font-size: 35px;
+}
+
+.haven p {
+    margin: 10px 230px 10px 50px;
+    font-size: 20px;
 }
 
 .cozy {
@@ -167,6 +245,16 @@
     /* display: flex; */
 }
 
+.cozy h3 {
+    margin: 50px 20px 10px 50px;
+    font-size: 35px;
+}
+
+.cozy p {
+    margin: 7px 130px 20px 50px;
+    font-size: 20px;
+}
+
 /* New */
 .new {
     display: flex;
@@ -177,6 +265,26 @@
     display: flex;
     flex-direction: column;
     flex: 1;
+    /* background: rebeccapurple; */
+}
+
+.new-one h3 {
+    font-size: 25px;
+    margin: 50px 0 20px 10px;
+}
+
+.new-one h3::after {
+    content: "";
+    display: block;
+    height: 4px;
+    background-color: rgba(235, 150, 150, 0.466);
+    width: 45%;
+    margin-top: 10px;
+}
+
+.new-one p {
+    font-size: 18px;
+    margin: 0 10px;
 }
 
 .new-two {
@@ -186,8 +294,8 @@
 }
 
 .third-one {
-    width: 320px;
-    height: 200px;
+    /* width: 320px;
+    height: 200px; */
     display: flex;
     margin: 20px;
 }
@@ -339,12 +447,17 @@
 .six1 {
     display: flex;
     gap: 200px;
+    position: relative;
 }
 
 .six1-box {
     display: flex;
     width: 400px;
     height: 350px;
+    position: relative;
+    top: 15px;
+    left: 20px;
+    border-radius: 25%;
 }
 
 .six1-img {
@@ -357,20 +470,24 @@
     display: flex;
     width: 400px;
     height: 350px;
-    background: rgba(168, 35, 35, 0.466);
+    background: rgba(124, 104, 104, 0.2);
     flex-direction: column;
 }
 
 .chair-trend h4 {
     font-size: 33px;
-    margin: 30px 10px 50px 20px;
+    margin: 30px 10px 0px 20px;
 }
 
-/* .chair-trend::after {
-    width: 5px;
-    height: 10px;
-    color: black;
-} */
+.chair-trend h4::after {
+    content: "";
+    display: block;
+    height: 4px;
+    background-color: rgba(235, 150, 150, 0.466);
+    width: 25%;
+    margin-top: 10px;
+}
+
 
 .chair-trend p {
     font-size: 18px;
@@ -381,12 +498,15 @@
 .six2 {
     display: flex;
     gap: 200px;
+    position: relative;
 }
 
 .six2-box {
     display: flex;
-    width: 400px;
+    width: 380px;
     height: 350px;
+    position: relative;
+    left: 20px;
 }
 
 .six2-img {
@@ -398,21 +518,24 @@
 .practical {
     display: flex;
     width: 400px;
-    height: 350px;
-    background: rgba(168, 35, 35, 0.466);
+    height: 370px;
+    background: rgba(124, 104, 104, 0.2);
     flex-direction: column;
 }
 
 .practical h4 {
     font-size: 33px;
-    margin: 30px 10px 50px 20px;
+    margin: 30px 10px 0px 20px;
 }
 
-/* .practical::after {
-    width: 5px;
-    height: 10px;
-    color: black;
-} */
+.practical h4::after {
+    content: "";
+    display: block;
+    height: 5px;
+    background-color: rgba(235, 150, 150, 0.466);
+    width: 25%;
+    margin-top: 10px;
+}
 
 .practical p {
     font-size: 18px;
@@ -470,20 +593,23 @@
 .ninth1_row1-text {
     display: flex;
     flex: 1;
-    background: rgba(235, 150, 150, 0.466);
+    background: rgba(124, 104, 104, 0.2);
     flex-direction: column;
 }
 
 .ninth1_row1-text h4 {
     font-size: 33px;
-    margin: 30px 10px 50px 20px;
+    margin: 30px 10px 0px 20px;
 }
 
-/* .ninth1_row1-text::after {
-    width: 5px;
-    height: 10px;
-    color: black;
-} */
+.ninth1_row1-text h4::after {
+    content: "";
+    display: block;
+    height: 4px;
+    background-color: rgba(235, 150, 150, 0.466);
+    width: 25%;
+    margin-top: 15px;
+}
 
 .ninth1_row1-text p {
     font-size: 18px;
@@ -640,4 +766,165 @@
     color: white;
     font-size: 19px;
     margin-top: 20px;
+}
+
+/* MEDIA QUERY */
+@media (max-width: 768px) {
+    
+    /* Simple */
+    .simple {
+        display: flex;
+        position: static;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        /* width: 100%; */
+    }
+
+    .simple-one {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    .simple-two{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        width: 100%;
+        height: 100%;
+        gap: 20px;
+    }
+    .empty{
+        display: none;
+        position: static;
+    }
+
+    .second {
+        position: static;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        /* flex: 1; */
+    }
+
+    .haven {
+        position: static;
+        width: 100%;
+        height: 100%;
+    }
+
+    .haven h3 {
+        margin: 50px 30px 10px 30px;
+        font-size: 30px;
+    }
+    
+    .haven p {
+        margin: 20px 30px;
+        font-size: 18px;
+    }
+
+    .cozy {
+        position: static;
+        width: 100%;
+        height: 100%;
+    }
+
+    .cozy h3 {
+        margin: 50px 30px 10px 30px;
+        font-size: 30px;
+    }
+    
+    .cozy p {
+        margin: 20px 30px;
+        font-size: 18px;
+    }
+
+    /* New */
+    .new-one h3 {
+        font-size: 20px;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .new-one p {
+        font-size: 15px;
+        margin-bottom: 0;
+    }
+
+    .third-one {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+
+    .new-two {
+        gap: 10px;
+    }
+
+    /* Modern */
+    .modern {
+        display: flex;
+        position: static;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .interior {
+        display: flex;
+        position: static;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .interior h3 {
+        font-size: 35px;
+        margin-top: 80px;
+        margin-bottom: 20px;
+        text-align: start;
+    }
+    
+    .interior p {
+        padding-right: 0;
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    .modern-box {
+        display: flex;
+        position: static;
+        flex: 1;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .plain {
+        display: none;
+    }
+
+    .mod1 {
+        display: flex;
+        position: static;
+        width: 100%;
+        height: 40%;
+
+    }
+
+    .mod2 {
+        display: flex;
+        position: static;
+        width: 100%;
+        height: 40%;
+    }
+
+    /* Sixth */
+    .sixth {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    /* Seventh */
 }
