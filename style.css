@@ -778,6 +778,16 @@
         font-size: 32px;
     }
 
+    .hero2 {
+        width: 100%;
+        height: 100%;
+        margin-top: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
     /* Simple */
     .simple {
         display: flex;
@@ -1114,5 +1124,61 @@
 
     .btn-row button {
         padding: 10px;
+    }
+
+    .six1 {
+        flex-direction: column;
+    }
+
+    .six2 {
+        flex-direction: column-reverse;
+    }
+
+    .practical h4 {
+        font-size: 22px;
+    }
+
+    .modern {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .modern-box {
+        display: flex;
+        width: 100%;
+        height: 50%;
+    }
+
+    .mod-img1 {
+        object-fit: fill;
+        width: 100%;
+        height: 50%;
+    }
+
+    .interior h3 {
+        text-align: center;
+    }
+
+    .interior p {
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .simple {
+        flex-direction: column;
+    }
+
+    .new {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .new-one p {
+        margin-top: 10px;
+        font-size: 17px;
+    }
+
+    .new-two {
+        flex-direction: column;
     }
 }
